@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script type="text/javascript" src="recibeForm.js">
+
+    </script>
+</head>
+<body>
+    <form>
+        Nombre: <input type = "text" name = "campo_nombre" id="nombre" placeholder="(escriba aqui su nombre)" size="60"/>
+        <br>
+        Contraseña: <input type = "password" name = "campo_contrasena" />
+        <br>
+        Descripcion larga:
+        <br><textarea rows="6" cols="50" name = "campo_descripcion"></textarea><br>
+        Seleccione:<br>
+        <input type = "radio" name = "opcionesradio" > Mayor de edad<br>
+        <input type = "radio" name = "opcionesradio" checked> Menor de edad<br>
+        Seleccione:<br>
+        <input type = "checkbox" name = "op1" > Estudiante<br>
+        <input type = "checkbox" name = "op2" checked> Ni aqui ni allá<br>
+        <input type = "checkbox" name = "op3" > Jubilado<br>
+        Seleccione:<br>
+        <select name = "listadesplegable" multiple>
+        <option value = "campo_Empadronado" selected>Empadronado</option><br>
+        <option value = "campo_Visitante habitual">Visitante habitual</option><br>
+        <option value = "campo_Turista">Turista</option><br>
+        <option value = "campo_Desplazado">Desplazado</option><br>
+        </select><br>
+        fecha: <input type="date" name="fecha">
+        <br>
+
+        Elige un color personal<input type = "color" name = "selectorDeColor" /><br>
+        Sube una foto de tu ordenador<input type = "file" name = "fileupload" accept = "image/*" /><br>
+        <input type="submit" name="enviar" id="enviar" value="enviar" onclick="captura();"><br><br>
+    </form>
+    <br>
+        <p> <span id="mostrar"> </span>.</p>
+       <script> window.alert("hola"); </script>
+         
+    <br>
+    <a href="index.html">Volver al inicio</a>
+    
+</body>
+</html>

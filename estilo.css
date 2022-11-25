@@ -1,0 +1,185 @@
+nav {
+    /* SI USAMOS UNA IMAGEN */
+    background-image: url("banner.jpg");
+    /* SI USAMOS UN FONDO LISO DE COLOR */
+    /*background-color: #40a810;
+    /* el alto minimo que ha de tener la cabecera (sea imagen o sea color)*/
+    min-height: 500px;
+    /* dimension del nav (alto), en relacion a la pagina */
+    height: 20%;
+    /* dimension del nav (ancho), en relacion a la pagina */
+    width: 100%;
+    /* Asi ponemos la imagen DE FONDO, cubre todo el header y su contenido, no es un elemento más dentro del header*/
+    background-size: cover;
+    /* relacion de tamaño de imagen sobre el fondo. Con un 50% de ancho, mete DOS VECES la imagen, salvo poner luego no-repeat */
+    background-repeat: no-repeat;
+    /* si la relacion de tamaño es menor que el tamaño del header, que no repita la imagen*/
+    background-position: center center;
+    /* Separamos el texto de la cabecera de los bordes de la misma */
+    padding: 5px 5px 5px 5px;
+    /* Es necesario si queremos que el menu este encima de este nav */
+    position: relative;
+}
+
+.contenedor_menu {
+    /* position:absolute significa que un elemento se coloca con referencia absoluta en relación con el antepasado más cercano
+    que tiene position:absolute
+    o bien
+    position:relative." */
+    /* Asi pues con position:absolute se permite "el uso top, right, bottom, left" de modo absoluto sobre su contenedor
+    */
+    /* En este caso, este contenedor contiene el menu, y se posiciona de modo absoluto sobre si padre, el nav, con lo que siempre
+    podemos asignarlo a cualquier esquina del nav (segun los extremos con valor 0 que usemos) */
+    position: absolute;
+    /* Este margen desplaza algo el menu de la esquina en la que lo estemos poniendo */
+    margin: 50px;
+    /* Esto indica que se coloque pegado a la parte de abajo de su contenedor */
+    bottom: 0;
+    /* Esto indica que se coloque pegado a la parte derecha de su contenedor */
+    right: 50;
+}
+
+nav div a {
+    /* Para ir colocando cada elemento del menu encadenados a la derecha */
+    float: rigth;
+    /* Para separar un elemento del menu del otro */
+    margin-left: 2px;
+    /* Establece el ancho y alto de la caja del menu, esto es, en este caso, del elemento a */
+    padding: 5px 10px 5px 10px;
+    /* Color de fondo */
+    background-color: rgb(236, 231, 238);
+    /* Color de texto */
+    color: rgb(247, 241, 247);
+    /* Para hacer que los enlaces del menu no esten subrayados */
+    text-decoration: none;
+    /* Tamaño del texto */
+    font-size: 17px;
+    /* Texto en negrita */
+    font-weight: bold;
+    }
+    /* para hacer que el fondo de cada elemento del menu camie de color al pasar el raton por encima */
+nav div a:hover {
+    /* Color de texto */
+    color: rgb(27, 4, 39);
+    /* Texto en negrita */
+    font-weight: bold;
+    /* Color de fondo */
+    background-color: rgb(170, 192, 245);
+}
+
+.articulo {
+    width: 28%;
+    float: left;
+    background-color: darkslategray;
+    margin:5px;
+    border-radius: 5%;
+    padding: 5px;
+    }
+.articulo img{
+    float: left;
+    }
+.div_vacio_con_clear{
+    clear: both;
+}
+
+a:link {
+    color: red;
+} /* link aun sin visitar (no se ha pinchado en el) */
+a:visited {
+    color: green;
+} /* link ya visitado */
+a:hover {
+    color: hotpink;
+} /* Raton pasando por encima del link */
+a:active {
+    color: blue;
+} /* Raton pinchando en el link (esta “selected”)
+    */
+/*tablas */
+table, tr, td {
+    border: 2px solid rgb(52, 22, 189);
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 5px;
+    text-align: center;
+    /* Asi se aplica todo a la tabla y a sus celdas */
+    /* Borde simple, por defecto es doble
+    (collapse | separate) */
+    /* espacio interior del contenido de cada celda */
+    /* espaciado entre celdas */
+    /* centra el contenido de la celda */
+ }
+
+ /*cajas*/
+ #cajapadre {
+    width: 600px;
+    border: 1px solid;
+}
+#caja-1 {
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background-color: #AAAAAA;
+}
+    #caja-2 {
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background-color: #CCCCCC;
+    }
+    #caja-3 {
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background-color: #AAAAAA;
+    }
+    #caja-4 {
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background-color: #CCCCCC;
+    }
+.restaurar {
+    clear: both;
+}
+
+/*menu*/
+#listamenu > li {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+    }
+    #listamenu li > ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: #9FC8D9;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    list-style: none;
+    z-index: 1000;
+    }
+    #listamenu li > ul > li {
+    width: 120px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 10px;
+    }
+    #listamenu li:hover ul {
+    display: block;
+    }
+    #listamenu a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+    }
+    #menuprincipal li:hover {
+    background-color: #6FACC6;
+    }
